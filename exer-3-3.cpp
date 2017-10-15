@@ -1,20 +1,13 @@
 #include<iostream.h>
 void main()
 {
-	int i;
-	cout<<"please input i:";
-	cin>>i;
-	if(i<10)
-		cout<<"<10"<<endl;
-	else
+	int a,b;
+	cin>>a;
+	if(a%3==0||a%7==0) b=1;
+	else b=2;
+	switch(b)
 	{
-		if(i<=99)
-			cout<<"10~99"<<endl;
-		else
-		{
-			if(i<=999)
-				cout<<"100~999"<<endl;
-			else
-				cout<<"1000ртио";
-}}}
-
+	case 1:cout<<"YES\n";break;
+	case 2:cout<<"NO\n";
+	}
+}
